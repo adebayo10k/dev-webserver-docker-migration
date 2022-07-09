@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+
+  web:
+    build: 
+      context: ./
+      dockerfile: ./webserver/Dockerfile
+    container_name: a10k_site_running
+    ports:
+    - "8072:80"
+    environment:
+      - APACHE_LOG_DIR=/var/log/data_access_dir
+    volumes:
+      - shared_vol:/var/log/data_access_dir
+    depends_on:
+      - data_hub
+  
+  data_hub:
+    build:
+      context: ./
+      dockerfile: ./data_hub/Dockerfile
+    container_name: data_only_hub
+    volumes:
+     - shared_vol:/var/log/data_access_dir
+
+volumes:
+  shared_vol:
+
+  
