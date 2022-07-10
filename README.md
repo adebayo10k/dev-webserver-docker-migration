@@ -13,7 +13,7 @@ You can also read a step-by-step account of the process by which this image buil
 
 By following the instructions in this document, you will be using your Docker build automation tooling, like the docker-compose tool, to run a set of containers. You'll use the stable, trusted official, public DockerHub images as base images.
 
-The _Running the pre-baked DockerHub images_ section at the end of this document offers a quick alternative, but less recommended way to get these containers running, by pulling the pre-baked image from the [adebayo10k DockerHub registry domain](https://hub.docker.com/u/adebayo10k).
+The [(Optional) Running the pre-baked DockerHub images](#optional-running-the-pre-baked-dockerhub-images) section at the end of this document offers a quick alternative, but less recommended way to get these containers running, by pulling the pre-baked image from the [adebayo10k DockerHub registry domain](https://hub.docker.com/u/adebayo10k).
 
 ## Files
 - docker-compose.yaml - the main build automation configuration file.
@@ -153,7 +153,7 @@ sudo docker run --name a10k_site_running -v shared_vol:/log/data_access_dir \
 adebayo10k/dev-webserver-docker-migration_web:latest
 ```
 
-... then as above, from [(Optional) Check the container environment](#(Optional) Check the container environment)
+... then as above, from [(Optional) Check the container environment](#optional-check-the-container-environment).
 
 
 
