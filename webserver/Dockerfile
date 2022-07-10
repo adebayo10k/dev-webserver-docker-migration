@@ -1,7 +1,7 @@
 #################################
 # Dockerfile to build an httpd web server image 
 #################################
-# Base image is Apaches' httpd server (based on Redhad (official) Linux)
+# Base image is Apaches' httpd server (based on Redhat (official) Linux)
 FROM httpd
 # Author: Damola Adebayo
 LABEL maintainer="Damola Adebayo <adebayo10k@gmail.com>"
