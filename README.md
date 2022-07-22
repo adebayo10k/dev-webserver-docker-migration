@@ -109,7 +109,7 @@ Outputs something like:
 
 ### Browse the site for a bit
 
-Now you can navigate a browser on your host to `http://localhost:8072`
+Now you can feed this URL to your browsers' address bar: `http://localhost:8072`
 
 
 When the containers are running successfully, you can securely access the log data you're generating, from a transient container. Issue this command to tell it to spin up, report and spin down:
